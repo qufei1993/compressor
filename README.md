@@ -1,45 +1,47 @@
 # Compressor
 
-> 一款免费开源的文件压缩工具，Compressor 让您的文件体积更小！
+> A free and open source file compression tool, Compressor makes your files smaller!
 
-![](./docs/assets/compress-example.png)
+Languages: [:cn: 中文](/docs/README-zh.md) | [:uk: English](README.md)
 
-## 功能
+![](/docs/assets/compress-example.png)
 
-* [X] 国际化
-* [X] 暗黑模式
-* [X] 自定义压缩配置参数
-* [x] 图像压缩
+## Feature
+
+* [X] Internationalization
+* [X] Dark Mode
+* [X] Customize compression configuration parameters
+* [x] Image compression
   * [X] Png
   * [X] Jpeg
   * [X] Gif
-  * [x] 转换为 Webp
-* [ ] 视频压缩
-* [ ] 文档压缩
-* [ ] 用户系统
+  * [x] Convert to Webp
+* [ ] Video compression
+* [ ] Document compression
+* [ ] User system
 
-## 技术栈
+## Technology stack
 
-项目整体以 TypeScript 编程语言为主，服务端使用的 Node.js，以下为主要用到的技术选型。
+The project mainly uses TypeScript programming language and Node.js as the server. The following is the selection of the main technologies used.
 
-* 前端：React 18 + redux/toolbox + @vanilla-extract/css + vite + socket.io-client
-* 后端：Node.js v16.x + Nest.js + Socket.io
+* Front end：React 18 + redux/toolbox + @vanilla-extract/css + vite + socket.io-client
+* Back end：Node.js v16.x + Nest.js + Socket.io
 
-## 本地运行
+## Run locally
 
-前后端项目在开发环境都依赖于 Node.js，需要先确保已正确安装 [Node.js](https://nodejs.org/en/download/)，且版本在 v16.x LTS 以上。
+The front-end and back-end projects depend on Node.js in the development environment. You need to ensure that they are installed correctly and the version is above v16.x LTS.
 
 ```bash
-# 下载代码
+# download code
 git clone https://github.com/qufei1993/compressor.git
 cd compressor
 
-# 启动客户端
+# Start the client
 cd client
 npm install
 npm run dev
 
-# 启动服务端
+# Start the server
 cd server
 npm install
 npm run start:dev
