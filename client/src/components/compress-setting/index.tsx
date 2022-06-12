@@ -17,7 +17,7 @@ import * as styled from './styled.css';
 
 const { Text } = Typography;
 
-const FormItemComponent:FC<{ type: TFileExtra }> = ({ type }) => {
+const FormItemComponent: FC<{ type: TFileExtra }> = ({ type }) => {
   switch (type) {
     case FileExTra.png:
       return <Png />;
