@@ -1,0 +1,64 @@
+env:
+  browser: true
+  es2021: true
+extends:
+  - airbnb
+  - prettier
+  - plugin:@typescript-eslint/recommended
+  - plugin:react/jsx-runtime
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 13
+  sourceType: module
+plugins:
+  - react
+  - '@typescript-eslint'
+  - prettier
+settings:
+  import/resolver:
+    node:
+      # https://github.com/import-js/eslint-plugin-import#resolvers
+      extensions:
+        - ".js"
+        - ".jsx"
+        - ".ts"
+        - ".tsx"
+rules: {
+  prettier/prettier: 2,
+  
+  # "@typescript-eslint/explicit-module-boundary-types": 2,
+  no-console: 0,
+
+  # https://stackoverflow.com/questions/55614983/jsx-not-allowed-in-files-with-extension-tsxeslintreact-jsx-filename-extensio
+  react/jsx-filename-extension: [
+    2,
+    {
+      extensions: ['.js', '.jsx', '.ts', '.tsx']
+    }
+  ],
+
+  import/extensions: 0,
+
+  # https://stackoverflow.com/questions/69928061/struggling-with-typescript-react-eslint-and-simple-arrow-functions-components
+  react/function-component-definition: 0,
+
+  comma-dangle: 0,
+
+  import/prefer-default-export: 0,
+
+  # https://stackoverflow.com/questions/63961803/eslint-says-all-enums-in-typescript-app-are-already-declared-in-the-upper-scope
+  no-shadow: 2,
+  typescript-eslint/no-shadow: 0,
+
+  no-param-reassign: [
+    2,
+    {
+      props: true,
+      ignorePropertyModificationsFor: [
+        'state',
+      ]
+    }
+  ]
+}

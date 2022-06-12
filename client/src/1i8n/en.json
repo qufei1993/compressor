@@ -1,0 +1,134 @@
+{
+  "language": "English",
+  "title": "Compressor",
+  "slogan": "A free and open source file compression tool",
+  "common": {
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No",
+    "reset": "Reset",
+    "apply": "Apply",
+    "fileExtraTypeDisplayName": {
+      "jpg": "Compress JPG",
+      "png": "Compress PNG",
+      "gif": "Compress GIF",
+      "webp": "Convert to Webp"
+    }
+  },
+  "header": {
+    "compressImages": "Compress images",
+    "compressVideos": "Compress videos"
+  },
+  "footer": {
+    "product": "Product",
+    "contactUs": "Contcat US",
+    "contactUsDesc": "After scanning the above QR code, follow the wechat public account of programming industry and reply the key words compressor to join the communication group"
+  },
+  "notFound": {
+    "description": "Sorry, the page you visited does not exist!",
+    "backHome": "Back to Home"
+  },
+  "errorBoundary": {
+    "tips": "Sorry for the inconvenience, please refresh and try again. If you can't solve it, you can report the problem in the issue list!"
+  },
+  "home": {
+    "title": "Home"
+  },
+  "compress": {
+    "intro": "makes your files smaller!",
+    "compression": "Compression",
+    "startCompress": "Compress",
+    "recompress": "Compress",
+    "list": {
+      "fileStage": {
+        "wait": "Not started",
+        "calculateHash": "Charging up",
+        "uploadChunk": "Uploading",
+        "compress": "Compression"
+      }
+    },
+    "compressInfo": {
+      "count": "{{fileTotalCount}} files in total, {{successFileTotalCount}} were successfully compressed",
+      "successRatio": ", the volume is reduced by {{successCompressSize}} and the compression ratio is {{successCompressRatio}}%"
+    },
+    "deleteFile": {
+      "title": "Delete All Files?",
+      "content": "If you click OK, the converted file will be deleted from the server"
+    },
+    "upload": {
+      "text": "Click or drag files to this area for compression",
+      "hint": "Supports single or batch upload compression, there is no limit on the number or size of files"
+    },
+    "setting": {
+      "advancedSettings": "Settings"
+    }
+  },
+  "compressSetting": {
+    "desc": "Adjust the configuration to optimize the compression results, the following are optional operations, the system has provided the default configuration during processing"
+  },
+  "compressOptions": {
+    "png": {
+      "quality": "Quality",
+      "qualityDesc": "The quality parameter determines the quality of the compression. The minimum and maximum values are numbers between 0 (worst) and 100 (perfect). It was found that setting the parameter to 65 - 80 can achieve a good balance between file size and image quality.",
+      "speed": "Speed",
+      "speedDesc": "The speed parameter determines the execution speed of image optimization, the value range is 1~11, the default value is 4",
+      "expand": "Expand",
+      "dithering": "Dithering",
+      "ditheringDesc": "Set the dithering level using a fractional number between 0 (none) and 1 (full).",
+      "posterrize": "Posterize",
+      "posterrizeDesc": "Truncate number of least significant bits of color (per channel). Use this when image will be output on low-depth displays (e.g. 16-bit RGB). pngquant will make almost-opaque pixels fully opaque and will reduce amount of semi-transparent colors."
+    },
+    "jpg": {
+      "quality": "Quality",
+      "qualityDesc": "The quality parameter determines the quality of the compression. The minimum and maximum values are numbers between 0 (worst) and 100 (perfect).",
+      "progressive": "Progressive",
+      "progressiveDesc": "default true, false creates baseline JPEG file.",
+      "targa": "Targa",
+      "targaDesc": "Input file is Targa format (usually not needed)",
+      "revert": "Revert",
+      "revertDesc": "Revert to standard defaults instead of mozjpeg defaults",
+      "fastCrush": "Progressive scan",
+      "fastCrushDesc": "Disable progressive scan optimization",
+      "dcScanOpt": "DC scan optimization",
+      "dcScanOptDesc": "Set DC scan optimization mode.",
+      "dcScanOptValues": {
+        "one": "0 One scan for all components",
+        "two": "1 One scan per component",
+        "three": "2 Optimize between one scan for all components and one scan for 1st component plus one scan for remaining components"
+      },
+      "trellis": "Trellis quantization",
+      "trellisDesc": "Trellis quantization is an algorithm that can improve data compression in DCT-based encoding methods.",
+      "trellisLink": "https://en.wikipedia.org/wiki/Trellis_quantization"
+    },
+    "gif": {
+      "interlaced": "Interlaced",
+      "interlacedDesc": "Interlace gif for progressive rendering.",
+      "optimizationLevel": "Compression level",
+      "optimizationLevelDesc": "The optimization level determines how much optimization is done; higher levels take longer, but may have better results.",
+      "optimizationLevelValues": {
+        "one": "1. Stores only the changed portion of each image.",
+        "two": "2. Also uses transparency to shrink the file further.",
+        "three": "3. Try several optimization methods (usually slower, sometimes better results)"
+      },
+      "colors": "Number of colors",
+      "colorsDesc": "Reduce the number of distinct colors in each output GIF to num or less. Num must be between 2 and 256."
+    },
+    "webp": {
+      "preset": "Preset",
+      "presetDesc": "Preset setting, one of default, photo, picture, drawing, icon and text.",
+      "quality": "Quality",
+      "qualityDesc": "Set quality factor between 0 and 100.",
+      "alphaQuality": "Alpha Quality",
+      "alphaQualityDesc": "Set transparency-compression quality between 0 and 100.",
+      "method": "Method",
+      "methodDesc": "Specify the compression method to use, between 0 (fastest) and 6 (slowest). This parameter controls the trade off between encoding speed and the compressed file size and quality.",
+      "sharpness": "Sharpness",
+      "sharpnessDesc": "Set filter sharpness between 0 (sharpest) and 7 (least sharp).",
+      "lossless": "Lossless",
+      "losslessDesc": "Encode images losslessly.",
+      "nearLossless": "Near Lossless",
+      "nearLosslessDesc": "Encode losslessly with an additional lossy pre-processing step, with a quality factor between 0 (maximum pre-processing) and 100 (same as lossless)."
+    }
+  }
+}

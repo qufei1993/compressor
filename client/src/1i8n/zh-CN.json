@@ -1,0 +1,134 @@
+{
+  "language": "简体中文",
+  "title": "Compressor",
+  "slogan": "一款免费开源的文件压缩工具",
+  "common": {
+    "cancel": "取消",
+    "confirm": "确认",
+    "yes": "是",
+    "no": "否",
+    "reset": "重置",
+    "apply": "应用",
+    "fileExtraTypeDisplayName": {
+      "jpg": "压缩 JPG",
+      "png": "压缩 PNG",
+      "gif": "压缩 GIF",
+      "webp": "转为 Webp"
+    }
+  },
+  "header": {
+    "compressImages": "压缩图片",
+    "compressVideos": "压缩视频"
+  },
+  "footer": {
+    "product": "产品",
+    "contactUs": "联系我们",
+    "contactUsDesc": "扫描以上二维码，关注 “编程界” 微信公众号，回复关键词 “compressor” 加入交流群"
+  },
+  "notFound": {
+    "description": "抱歉，您访问的页面不存在!",
+    "backHome": "返回首页"
+  },
+  "errorBoundary": {
+    "tips": "给您带来的不便深感抱歉，请刷新后再次尝试。如不能解决，可在 issue 列表反馈问题！"
+  },
+  "home": {
+    "title": "首页"
+  },
+  "compress": {
+    "intro": "让您的文件体积更小！",
+    "compression": "压缩中",
+    "startCompress": "压缩",
+    "recompress": "压缩",
+    "list": {
+      "fileStage": {
+        "wait": "未开始",
+        "calculateHash": "准备中",
+        "uploadChunk": "上传中",
+        "compress": "压缩中"
+      }
+    },
+    "compressInfo": {
+      "count": "共 {{fileTotalCount}} 个文件，成功压缩 {{successFileTotalCount}} 个",
+      "successRatio": "，体积减少 {{successCompressSize}}，压缩率 {{successCompressRatio}}%"
+    },
+    "deleteFile": {
+      "title": "删除所有文件?",
+      "content": "如果点击确认，将会从服务器中删除转换后的文件。"
+    },
+    "upload": {
+      "text": "单击或拖动文件到此区域压缩",
+      "hint": "支持单个或批量上传压缩，没有文件的数量或尺寸限制"
+    },
+    "setting": {
+      "advancedSettings": "设置"
+    }
+  },
+  "compressSetting": {
+    "desc": "调整配置优化压缩结果，以下是可选的操作，系统在处理时已经提供了默认的配置"
+  },
+  "compressOptions": {
+    "png": {
+      "quality": "质量",
+      "qualityDesc": "quality 参数决定了压缩的质量，最小值和最大值是 0（最差） 到 100（完美） 之间的数字，发现参数设置为 65 - 80 可以在文件大小和图片质量之间取得一个良好的平衡。",
+      "speed": "速度",
+      "speedDesc": "speed 参数决定了图片优化的执行速度，取值范围为 1~11，默认值为 4",
+      "expand": "展开",
+      "dithering": "抖动",
+      "ditheringDesc": "使用 `0`（无）和 `1`（全力）之间的小数来设置抖动级别。",
+      "posterrize": "分色",
+      "posterrizeDesc": "截断最低有效位数（每个通道）的数量。 当图像将在低深度显示器（例如16位RGB）上输出时使用此选项。 pngquant 将使几乎不透明的像素完全不透明，并减少半透明颜色的数量。"
+    },
+    "jpg": {
+      "quality": "质量",
+      "qualityDesc": "quality 参数决定了压缩的质量，最小值和最大值是 0（最差） 到 100（完美） 之间的数字",
+      "progressive": "逐行扫描",
+      "progressiveDesc": "默认是 true，false 是创建无损的 JPEG 文件",
+      "targa": "Targa 格式",
+      "targaDesc": "输入文件为 Targa 格式（通常不需要）。TGA（Targa）格式是计算机上应用最广泛的图象格式，在兼顾了 BMP 的图象质量的同时又兼顾了 JPEG 的体积优势",
+      "revert": "恢复",
+      "revertDesc": "恢复为标准默认值，而不是 mozjpeg 默认值",
+      "fastCrush": "逐行扫描",
+      "fastCrushDesc": "禁止逐行扫描优化",
+      "dcScanOpt": "DC 扫描",
+      "dcScanOptDesc": "设置 DC 扫描优化",
+      "dcScanOptValues": {
+        "one": "0 一次扫描所有组件",
+        "two": "1 每个组件扫描一次",
+        "three": "2 对所有组件进行一次扫描和对第一个组件进行一次扫描以及对剩余组件进行一次扫描之间进行优化"
+      },
+      "trellis": "网格量化",
+      "trellisDesc": "网格量化是一种可以改进基于 DCT 的编码方法中的数据压缩的算法",
+      "trellisLink": "https://en.wikipedia.org/wiki/Trellis_quantization"
+    },
+    "gif": {
+      "interlaced": "隔行扫描",
+      "interlacedDesc": "用于渐进式渲染的隔行扫描 Gif",
+      "optimizationLevel": "压缩等级",
+      "optimizationLevelDesc": "优化级别决定了要做多少优化，更高的水平需要更长的时间，但可能有更好的效果",
+      "optimizationLevelValues": {
+        "one": "1. 仅存储每个图像的更改部分",
+        "two": "2. 使用透明度进一步缩小文件",
+        "three": "3. 尝试几种优化方法（通常较慢，有时效果更好）"
+      },
+      "colors": "色彩值",
+      "colorsDesc": "将每个输出 GIF 中不同颜色的数量减少到指定的色彩值或更少，色彩值必须介于 2 和 256 之间。"
+    },
+    "webp": {
+      "preset": "Preset",
+      "presetDesc": "Preset setting, one of default, photo, picture, drawing, icon and text.",
+      "quality": "质量",
+      "qualityDesc": "quality 参数决定了压缩的质量，最小值和最大值是 0（最差） 到 100（完美） 之间的数字",
+      "alphaQuality": "Alpha Quality",
+      "alphaQualityDesc": "将透明度压缩质量设置在 0 到 100 之间",
+      "method": "方法",
+      "methodDesc": "指定要使用的压缩方法，介于 0（最快）和 6（最慢）之间。 此参数控制编码速度与压缩文件大小和质量之间的权衡。",
+      "sharpness": "锐度/清晰度",
+      "sharpnessDesc": "将滤镜锐度设置在 0（最锐利）和 7（最不锐利）之间。",
+      "lossless": "无损",
+      "losslessDesc": "无损编码图像",
+      "nearLossless": "近似无损",
+      "nearLosslessDesc": "使用额外的有损预处理步骤进行无损编码，品质因数介于 0（最大预处理）和 100（与无损相同）之间。"
+    }
+  }
+}

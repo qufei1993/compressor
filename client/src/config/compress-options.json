@@ -1,0 +1,30 @@
+{
+  "png": {
+    "quality": [65, 80],
+    "speed": 4,
+    "dithering": 1,
+    "posterrize": 256
+  },
+  "jpg": {
+    "quality": 80,
+    "progressive": true,
+    "targa": false,
+    "revert": false,
+    "fastCrush": false,
+    "dcScanOpt": 1,
+    "trellis": true
+  },
+  "webp": {
+    "quality": 75,
+    "preset": "default",
+    "alphaQuality": 100,
+    "method": 4,
+    "sharpness": 0,
+    "lossless": false
+  },
+  "gif": {
+    "colors": 160,
+    "optimizationLevel": 1,
+    "interlaced": false
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "compressor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "五月君 <qzfweb@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky install",
+    "lint:server": "cd server && npm run lint",
+    "lint:client": "cd client && npm run lint"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "husky": "^8.0.1"
+  }
+}
