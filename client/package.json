@@ -7,7 +7,6 @@
     "build": "vite build",
     "lint": "eslint ./src/",
     "lint:fix": "eslint --fix ./src",
-    "prepare": "husky install",
     "lessc:light": "lessc --js --modify-var='ant-prefix=antd-light' node_modules/antd/dist/antd.less src/styles/antd-light.css",
     "lessc:dark": "lessc --js --modify-var='ant-prefix=antd-dark' node_modules/antd/dist/antd.dark.less src/styles/antd-dark.css"
   },
